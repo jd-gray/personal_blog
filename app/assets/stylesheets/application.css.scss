@@ -180,6 +180,10 @@ input[type="submit"], .button {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
