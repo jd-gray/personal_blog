@@ -10,37 +10,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header id="main_navigation" class="clearfix">
-      <%= link_to "Jared Gray", root_path, class: "name" %>
-      <nav>
-          <%= link_to "Articles", posts_path %>
-          <%= link_to "Projects", projects_path %>
-          <%= link_to "Contact", new_contact_path %>
-          <% if user_signed_in? %>
-            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%= link_to "Sign In", new_user_session_path %>
-          <% end %>
-      </nav>
-  </header>
 
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
+  <%= render 'layouts/nav' %>
+
+  <%= render 'layouts/error_messages' %>
 
   <%= yield %>
 
-  <footer id="main_footer">
-    <p class="copyright">&copy;2015 Jared Gray</p>
-    <nav>
-        <a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="http://github.com/" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="http://github.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="http://github.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-    </nav>
-  </footer>
+  <%= render 'layouts/footer' %>
 
 </body>
 </html>
