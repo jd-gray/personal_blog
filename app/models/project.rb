@@ -6,4 +6,5 @@ class Project < ActiveRecord::Base
   validates :description, presence: true
   validates :link,        presence: true
 
+  mount_uploader :image, ImageUploader
 end

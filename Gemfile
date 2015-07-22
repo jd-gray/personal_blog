@@ -16,6 +16,9 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.5.1'
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
 
 group :test do
   gem 'shoulda-matchers'

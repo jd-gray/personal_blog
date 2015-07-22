@@ -5,7 +5,10 @@
         <%= link_to "Projects", projects_path %>
         <%= link_to "Contact", new_contact_path %>
         <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            <%= link_to "Blog+", new_post_path %>
+            <%= link_to "Project+", new_project_path %>
+            <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            <b>Admin</b>
         <% else %>
           <%= link_to "Sign In", new_user_session_path %>
         <% end %>
