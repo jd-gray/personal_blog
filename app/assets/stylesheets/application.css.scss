@@ -184,10 +184,27 @@ input[type="submit"], .button {
     display: none;
 }
 
-.notice, .alert {
-  text-align: center;
-  padding: 1em 0;
-  border-bottom: 1px solid #E9E9E9;
+.notice-alert-messages {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    .alert, .notice {
+        padding: 2.5rem 0;
+        text-align: center;
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+    }
+    .alert {
+        background: red;
+    }
+    .notice {
+        background: rgba(135, 216, 211, 0.85);
+    }
+
 }
 
 @import 'welcome';
