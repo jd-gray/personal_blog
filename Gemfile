@@ -35,6 +35,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'guard'
   gem 'pry', '~> 0.10.1'
+  gem 'pry-rails'
 end
 
 group :development do
