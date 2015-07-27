@@ -295,7 +295,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
-  carrierwave
+  carrierwave (~> 0.10.0)
   coffee-rails (~> 4.1.0)
   devise (~> 3.5.1)
   factory_girl_rails
