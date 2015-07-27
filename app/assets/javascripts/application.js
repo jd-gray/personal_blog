@@ -15,11 +15,15 @@
 //= require turbolinks
 //= require_tree .
 
-$(window).load(function() {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");;
-});
+// Loader
+var ready;
+ready = function() {
+  $('#cover').fadeOut(1000);
+};
+$(document).ready(ready);
+$(document).on('page:load', ready);
 
+// Alert Messages
 $(document).ready(function() {
     setTimeout(function() {
         $(".notice-alert-messages").fadeOut("slow", function() {
