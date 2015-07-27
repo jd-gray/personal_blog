@@ -2,15 +2,16 @@
   <header>
       <p class="date"><%= @project.created_at.strftime('%A, %B %d') %></p>
       <h1><%= @project.title %></h1>
+      <%= image_tag @project.image_url(:medium) %>
       <hr>
   </header>
 
   <div id="content">
-      <%= markdown @project.description %>
+    <%= markdown @project.description %>
 
-      <div class="button_wrapper">
-          <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
-      </div>
+    <div class="button_wrapper">
+        <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
+    </div>
   </div>
 
   <% if user_signed_in? %>
@@ -22,3 +23,4 @@
 
   <hr>
 </div>
+

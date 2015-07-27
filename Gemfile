@@ -19,6 +19,7 @@ gem 'devise', '~> 3.5.1'
 gem 'carrierwave'
 gem 'fog'
 gem 'mini_magick'
+gem "figaro"
 
 group :test do
   gem 'shoulda-matchers'

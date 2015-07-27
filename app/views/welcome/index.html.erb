@@ -18,6 +18,7 @@
         <h2>Projects</h2>
         <hr>
         <% @projects.each do |post| %>
+            <%= image_tag post.image.url(:small) %>
             <h3><a href="#"><%= link_to post.title, post %></a></h3>
             <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
         <% end %>
