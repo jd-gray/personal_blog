@@ -18,7 +18,6 @@ gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.5.1'
 gem 'carrierwave-aws'
 gem 'mini_magick'
-gem "figaro"
 
 group :test do
   gem 'shoulda-matchers'
