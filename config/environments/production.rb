@@ -93,6 +93,7 @@ Rails.application.configure do
   # Sets Paperclip to Upload to Amazon S3 by default
   config.paperclip_defaults = {
     :storage => :s3,
+    :s3_protocol => :https,
     :s3_credentials => {
       :bucket => ENV['S3_BUCKET'],
       :access_key_id => ENV['S3_KEY'],
