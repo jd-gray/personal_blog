@@ -1,15 +1,11 @@
 CarrierWave.configure do |config|
-    config.fog_provider = 'fog/aws'
-    config.fog_credentials = {
-        :provider               => 'AWS',            # required
-        :aws_access_key_id      => ENV['S3_KEY'],    # required
-        :aws_secret_access_key  => ENV['S3_SECRET'], # required
-        :region                 => ENV['S3_REGION'], # optional, defaults to 'us-east-1'
-        #:host                  => nil,              # optional, defaults to nil
-        #:endpoint              => nil               # optional, defaults to nil
+    config.storage    = :aws
+    config.aws_bucket = ENV.fetch('S3_BUCKET')
+
+    config.aws_credentials = {
+    access_key_id:     ENV.fetch('S3_KEY'),
+    secret_access_key: ENV.fetch('S3_SECRET'),
+    region:            ENV.fetch('S3_REGION') # Required
     }
 
-    config.fog_directory   = ENV['S3_BUCKET']     # required
-    #config.fog_public     = true          # optional, defaults to true
-    #config.fog_attributes = {}            # optional, defaults to {}
 end
