@@ -6,5 +6,6 @@ class Project < ActiveRecord::Base
   validates :description, presence: true
   validates :link,        presence: true
 
-  mount_uploader :image, ImageUploader
+  has_attached_file :image, :styles => { :medium => "300x300>", :small => "150x150>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 end
