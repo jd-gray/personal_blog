@@ -3,8 +3,8 @@
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
-$highlight: #8bc6db;
-$border: #E9E9E9;
+$highlight: #6C7A89;;
+$border: #6C7A89;
 
 * {
     box-sizing: border-box;
@@ -78,7 +78,7 @@ p, ul, ol {
 }
 
 hr {
-    width: 3em;
+    width: 5em;
     display: block;
     height: 2px;
     border: 0;
@@ -98,6 +98,9 @@ hr {
         text-decoration: none;
         color: $dark;
         float: left;
+        &:hover {
+            color: $highlight;
+        }
     }
     nav {
         float: right;
@@ -107,6 +110,9 @@ hr {
             text-decoration: none;
             margin: 0 1rem;
             font-size: 1rem;
+            &:hover {
+                color: $highlight;
+            }
         }
     }
 }
@@ -189,6 +195,8 @@ input[type="submit"], .button {
     top: 0;
     width: 100%;
     z-index: 999;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
     .alert, .notice {
         padding: 2.5rem 0;
         text-align: center;
@@ -199,10 +207,10 @@ input[type="submit"], .button {
         letter-spacing: 1px;
     }
     .alert {
-        background: red;
+        background: #D64541;
     }
     .notice {
-        background: rgba(135, 216, 211, 0.85);
+        background: #2C3E50;
     }
 
 }
