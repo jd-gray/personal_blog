@@ -18,7 +18,7 @@
 // Loader
 var ready;
 ready = function() {
-  $('#cover').fadeOut(1000);
+  $('#cover').fadeOut(1500);
 };
 $(document).ready(ready);
 $(document).on('page:load', ready);
