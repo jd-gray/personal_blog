@@ -222,6 +222,12 @@ input[type="submit"], .button {
     width: 100%;
 }
 
+#welcome-image {
+    height: 250px;
+    width: 200px;
+    border-radius: 55%;
+}
+
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
