@@ -35,6 +35,8 @@ group :development, :test do
   gem 'guard'
   gem 'pry', '~> 0.10.1'
   gem 'pry-rails'
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem 'thin', '~> 1.6', '>= 1.6.4'
 end
 
 group :development do
