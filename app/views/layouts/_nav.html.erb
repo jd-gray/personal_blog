@@ -1,16 +1,16 @@
 <header id="main_navigation" class="clearfix">
-    <%= link_to "Jared Gray", root_path, class: "name" %>
-    <nav>
-        <%= link_to "BLOG", posts_path %>
-        <%= link_to "PROJECTS", projects_path %>
-        <%= link_to "CONTACT", new_contact_path %>
-        <% if user_signed_in? %>
-            <%= link_to "BLOG+", new_post_path %>
-            <%= link_to "PROJECT+", new_project_path %>
-            <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
-            <b>ADMIN</b>
-        <% else %>
-          <%= link_to "SIGN IN", new_user_session_path %>
-        <% end %>
-    </nav>
+  <%= link_to "Jared Gray", root_path, class: "name" %>
+  <nav>
+    <%= link_to "BLOG", posts_path %>
+    <%= link_to "PROJECTS", projects_path %>
+    <%= link_to "CONTACT", new_contact_path %>
+    <% if user_signed_in? %>
+        <%= link_to "BLOG+", new_post_path %>
+        <%= link_to "PROJECT+", new_project_path %>
+        <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
+        <b>ADMIN</b>
+    <% else %>
+      <%= link_to "SIGN IN", new_user_session_path %>
+    <% end %>
+  </nav>
 </header>

@@ -3,8 +3,14 @@
     background-color: #FFFFF3;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 60px;
 }
 
 .wrapper {
@@ -36,35 +42,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     color: $dark;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.375rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
-
-p, li {
-    font-size: 1.1rem;
-    line-height: 1.75;
-}
-
 p, ul, ol {
     margin: 0 0 1.6em 0;
 }
@@ -79,103 +56,107 @@ hr {
 }
 
 #main_navigation {
-    padding: 2.5em 5%;
-    border-bottom: 1px solid $border;
-    .name {
-        font-weight: 700;
-        font-size: 22px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        padding: 1rem;
-        text-decoration: none;
-        color: $dark;
-        float: left;
-        &:hover {
-            color: $highlight;
-        }
+  padding: 2.5em 5%;
+  border-bottom: 1px solid $border;
+  .name {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 4px;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $dark;
+    float: left;
+    &:hover {
+      color: $highlight;
     }
-    nav {
-        float: right;
-        padding-top: 1.5rem;
-        a {
-            color: $dark;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1rem;
-            &:hover {
-                color: $highlight;
-            }
-        }
+  }
+  nav {
+    float: right;
+    padding-top: 1.5rem;
+    a {
+      color: $dark;
+      text-decoration: none;
+      margin: 0 1rem;
+      &:hover {
+        color: $highlight;
+      }
     }
+  }
 }
 
 #page_title {
-    text-align: center;
-    border-bottom: 1px solid $border;
-    padding: 3em 0;
-    font-size: 1rem;
-    text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid $border;
+  padding: 1em 0;
+  font-size: 20px;
 }
 
 #main_footer {
-    padding: 2.5em 5%;
-    border-top: 1px solid $border;
-    .copyright {
-        float: left;
-        font-size: .9em;
-        margin: 0;
+  padding: 3em 5%;
+  padding-top: 20px;
+  border-top: 1px solid $border;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    i {
+      color: $dark;
+      margin-left: 1em;
+      // padding-top: .2em;
+      &:hover {
+        color: $highlight;
+      }
     }
-    nav {
-        float: right;
-        i {
-            color: $dark;
-            margin-left: 1em;
-            padding-top: .2em;
-            &:hover {
-                color: $highlight;
-            }
-        }
-    }
+  }
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
-    width: 100%;
-    max-width: 100%;
-    height: 3em;
-    border: 2px solid $border;
-    padding: 1em;
-    margin: .5em 0 2em 0;
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 2px solid $border;
+  padding: 1em;
+  margin: .5em 0 2em 0;
 }
 
 textarea {
-    min-height: 20em;
+  min-height: 20em;
 }
 
 input[type="submit"], .button {
-    outline: none;
-    background: transparent;
-    border: 2px solid $border;
-    text-align: center;
-    font-size: 1em;
-    color: $dark;
-    text-decoration: none;
-    padding: 1em 2em;
-    &:hover {
-        border: 2px solid $highlight;
-        color: $highlight;
-    }
+  outline: none;
+  background: transparent;
+  border: 2px solid $border;
+  text-align: center;
+  font-size: 1em;
+  color: $dark;
+  text-decoration: none;
+  padding: 1em 2em;
+  &:hover {
+    border: 2px solid $highlight;
+    color: $highlight;
+  }
 }
 
 .project_button {
-    background: $highlight;
-    color: $white;
-    text-decoration: none;
-    padding: 1em 2em;
+  background: $highlight;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
 }
 
 .button_wrapper {
-    margin: 4em 0 0 0;
-    text-align: center;
+  margin: 4em 0 0 0;
+  text-align: center;
 }
 
 .hidden {
@@ -183,38 +164,37 @@ input[type="submit"], .button {
 }
 
 .notice-alert-messages {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    .alert, .notice {
-        padding: 2.5rem 0;
-        text-align: center;
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #FFFFFF;
-        letter-spacing: 1px;
-    }
-    .alert {
-        background: #D64541;
-    }
-    .notice {
-        background: #2C3E50;
-    }
-
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  .alert, .notice {
+      padding: 2.5rem 0;
+      text-align: center;
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+  }
+  .alert {
+      background: #D64541;
+  }
+  .notice {
+      background: #2C3E50;
+  }
 }
 
 #cover {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 #welcome-image {
-    height: 250px;
-    width: 200px;
-    border-radius: 55%;
+  height: 250px;
+  width: 200px;
+  border-radius: 55%;
 }

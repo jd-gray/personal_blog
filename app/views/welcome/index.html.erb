@@ -1,27 +1,29 @@
-<div class="wrapper wrapper_padding clearfix">
-    <div class="col-1 about homepage_content">
-        <h2>About</h2>
-        <hr>
-        <!-- <%= image_tag "me.jpg", id: 'welcome-image' %> -->
-        <p>I am a Ruby on Rails developer living in sunny Phoenix, AZ</p>
-        <p>In my free time I spend time with my pups and try to stay active with crossfit.</p>
-        <p>Send me a message if you would like to chat about developing or anything else.</p>
+<div class="row">
+  <div class="container">
+    <div class="col-sm-6 homepage_content">
+      <h2>About</h2>
+      <hr>
+      <!-- <%= image_tag "me.jpg", id: 'welcome-image' %> -->
+      <p>I am a Ruby on Rails developer living in sunny Phoenix, AZ</p>
+      <p>In my free time I spend time with my pups and try to stay active with crossfit.</p>
+      <p>Send me a message if you would like to chat about developing or anything else.</p>
     </div>
-    <div class="col-2 homepage_content">
-        <h2>Blog</h2>
-        <hr>
-        <% @posts.each do |post| %>
-            <h3><a href="#"><%= link_to post.title, post %></a></h3>
-            <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-        <% end %>
+    <div class="col-sm-3 homepage_content">
+      <h2>Blog</h2>
+      <hr>
+      <% @posts.each do |post| %>
+          <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
     </div>
-    <div class="col-3 homepage_content">
-        <h2>Projects</h2>
-        <hr>
-        <% @projects.each do |post| %>
-            <div id ="project_image"><%= link_to image_tag(post.image.url(:small)), post %></div>
-            <h3><a href="#"><%= link_to post.title, post %></a></h3>
-            <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-        <% end %>
+    <div class="col-sm-3 homepage_content">
+      <h2>Projects</h2>
+      <hr>
+      <% @projects.each do |post| %>
+          <div id ="project_image"><%= link_to image_tag(post.image.url(:small)), post %></div>
+          <h3><a href="#"><%= link_to post.title, post %></a></h3>
+          <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
     </div>
+  </div>
 </div>
