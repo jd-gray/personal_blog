@@ -18,6 +18,7 @@ gem 'mail_form', '~> 1.5.1'
 gem 'devise', '~> 3.5.1'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '~> 1.6'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 group :test do
   gem 'shoulda-matchers'
