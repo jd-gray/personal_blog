@@ -1,14 +1,13 @@
 <div class="row">
   <div class="container">
-    <div class="col-sm-6 homepage_content">
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 homepage_content">
       <h2>About</h2>
       <hr>
-      <!-- <%= image_tag "me.jpg", id: 'welcome-image' %> -->
       <p>I am a Ruby on Rails developer living in sunny Phoenix, AZ</p>
       <p>In my free time I spend time with my pups and try to stay active with crossfit.</p>
       <p>Send me a message if you would like to chat about developing or anything else.</p>
     </div>
-    <div class="col-sm-3 homepage_content">
+    <div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-0 homepage_content">
       <h2>Blog</h2>
       <hr>
       <% @posts.each do |post| %>
@@ -16,7 +15,7 @@
           <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
       <% end %>
     </div>
-    <div class="col-sm-3 homepage_content">
+    <div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-0 homepage_content">
       <h2>Projects</h2>
       <hr>
       <% @projects.each do |post| %>

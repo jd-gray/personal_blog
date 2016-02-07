@@ -9,8 +9,6 @@
         <%= link_to "PROJECT+", new_project_path %>
         <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
         <b>ADMIN</b>
-    <% else %>
-      <%= link_to "SIGN IN", new_user_session_path %>
     <% end %>
   </nav>
 </header>
