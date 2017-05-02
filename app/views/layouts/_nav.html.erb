@@ -3,7 +3,6 @@
   <nav>
     <%= link_to "BLOG", posts_path %>
     <%= link_to "PROJECTS", projects_path %>
-    <%= link_to "CONTACT", new_contact_path %>
     <% if user_signed_in? %>
         <%= link_to "BLOG+", new_post_path %>
         <%= link_to "PROJECT+", new_project_path %>

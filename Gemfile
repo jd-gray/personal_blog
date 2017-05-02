@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.1'
-gem 'sass-rails', '~> 5.0'
+gem 'rails', '5.1.0'
+gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -12,8 +12,7 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.0.7'
-gem 'mail_form', '~> 1.5.1'
-gem 'devise', '~> 3.5.1'
+gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'aws-sdk', '~> 1.6'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
@@ -26,16 +25,12 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
   gem 'spring'
-  gem 'rspec-rails'
-  gem 'guard-rspec', require: false
-  gem 'factory_girl_rails'
   gem 'guard'
-  gem 'pry', '~> 0.10.1'
+  gem 'pry'
   gem 'pry-rails'
-  gem 'better_errors', '~> 2.1', '>= 2.1.1'
-  gem 'thin', '~> 1.6', '>= 1.6.4'
+  gem 'better_errors'
 end
 
 group :development do
