@@ -12,6 +12,7 @@ gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'friendly_id', '~> 5.1.0'
 gem 'will_paginate', '~> 3.0.7'
+gem 'haml', '~> 5.0', '>= 5.0.1'
 
 # Due to Rails 5.1
 gem 'devise', github: 'plataformatec/devise'

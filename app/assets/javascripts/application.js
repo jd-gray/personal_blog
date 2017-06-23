@@ -15,14 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-// Loader
-var ready;
-ready = function() {
-  $('#cover').fadeOut("slow");
-};
-$(document).ready(ready);
-$(document).on('page:load', ready);
-
 // Alert Messages
 $(document).ready(function() {
     setTimeout(function() {

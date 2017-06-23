@@ -3,4 +3,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@import "common";
+@import 'theme/variables';
+@import 'theme/base';
+
+@import 'views/welcome';
+@import 'views/posts_projects';
+
+@import 'libs/pygments';
