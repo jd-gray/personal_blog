@@ -1,0 +1,10 @@
+.skinny_wrapper.wrapper_padding#post_show_content
+  %header
+    %p.date= @post.created_at.strftime('%A, %B %d')
+    = @post.title
+    %hr
+
+  #content
+    = markdown @post.content
+  %hr
+  = render 'disqus'

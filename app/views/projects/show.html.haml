@@ -1,0 +1,14 @@
+.skinny_wrapper.wrapper_padding#post_show_content
+  %header
+    %p.date= @project.created_at.strftime('%A, %B %d')
+    %h1= @project.title
+    = image_tag @project.image.url(:medium)
+    %hr
+
+  #content
+    = markdown @project.description
+
+    .button_wrapper
+      = link_to "Visit #{@project.title}", @project.link, target: '_blank', class: 'project_button'
+  %hr
+

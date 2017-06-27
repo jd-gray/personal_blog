@@ -1,0 +1,10 @@
+#page_title Blog
+
+.skinny_wrapper#posts_wrapper
+    - @posts.each do |post|
+        .post
+        %p.date = post.created_at.strftime('%A, %B %d')
+            %h2 = link_to post.title, post
+            %hr
+
+= will_paginate @posts

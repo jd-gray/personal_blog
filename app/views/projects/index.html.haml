@@ -1,0 +1,11 @@
+%h1#page_titleMy Projects
+
+.skinny_wrapper#posts_wrapper
+  - @projects.each do |post|
+    #post
+      %p#date= post.created_at.strftime('%A, %B %d')
+      %h2= link_to post.title, post
+      = image_tag post.image.url(:small)
+      %hr
+
+= will_paginate @projects
