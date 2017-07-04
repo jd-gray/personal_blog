@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
 
-  resources :posts
+  resources :posts, only: [:show]
   resources :projects
 
   get 'welcome/index'

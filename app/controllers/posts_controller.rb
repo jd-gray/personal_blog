@@ -1,43 +1,8 @@
 class PostsController < ApplicationController
-  before_action :find_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :find_post, only: [:show]
+  before_action :authenticate_user!, except: [:show]
 
-  def index
-    @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
-  end
-
-  def new
-    @post = Post.new
-  end
-
-  def create
-    @post = Post.new(post_params)
-
-    if @post.save
-      redirect_to @post, notice: "Post successfully saved!"
-    else
-      render 'new', notice: "Something went wrong"
-    end
-  end
-
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-    if @post.update(post_params)
-      redirect_to @post, notice: "Updated!"
-    else
-      render 'edit'
-    end
-  end
-
-  def destroy
-    @post.destroy
-    redirect_to posts_path
-  end
+  def show; end
 
   private
 
