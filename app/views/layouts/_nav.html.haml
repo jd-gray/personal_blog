@@ -1,5 +1,10 @@
-%header#main_navigation.clearfix
+%header.main_navigation.clearfix
   = link_to 'Jared Gray', root_path, class: 'name'
 
-  %nav
-    = link_to 'Projects', projects_path
+  .social-links
+    %a{:href => "http://github.com/jd-gray", :target => "_blank"}
+      %i.fa.fa-github
+    %a{:href => "http://stackoverflow.com/users/4735914/jdgray?tab=profile", :target => "_blank"}
+      %i.fa.fa-stack-overflow
+    %a{:href => "https://www.linkedin.com/in/jareddgray", :target => "_blank"}
+      %i.fa.fa-linkedin

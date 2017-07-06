@@ -27,16 +27,6 @@ body {
     padding: 4rem 0;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 h1, h2, h3, h4, h5, h6, p, ul, li {
     color: $dark;
 }
@@ -54,14 +44,13 @@ hr {
     margin: 2rem 0;
 }
 
-#main_navigation {
+.main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
   .name {
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 4px;
-    padding: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     color: $dark;
@@ -70,72 +59,15 @@ hr {
       color: $highlight;
     }
   }
-  nav {
-    float: right;
-    padding-top: 1.5rem;
-    a {
-      color: $dark;
-      text-decoration: none;
-      margin: 0 1rem;
-      &:hover {
-        color: $highlight;
-      }
-    }
-  }
-}
-
-#main_footer {
-  padding: 3em 5%;
-  padding-top: 20px;
-  border-top: 1px solid $border;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 80px;
-  .copyright {
-    float: left;
-    font-size: .9em;
-    margin: 0;
-  }
-  nav {
+  .social-links {
     float: right;
     i {
       color: $dark;
       margin-left: 1em;
-      // padding-top: .2em;
       &:hover {
         color: $highlight;
       }
     }
-  }
-}
-
-input[type="text"], input[type="email"], input[type="password"], textarea {
-  width: 100%;
-  max-width: 100%;
-  height: 3em;
-  border: 2px solid $border;
-  padding: 1em;
-  margin: .5em 0 2em 0;
-}
-
-textarea {
-  min-height: 20em;
-}
-
-input[type="submit"], .button {
-  outline: none;
-  background: transparent;
-  border: 2px solid $border;
-  text-align: center;
-  font-size: 1em;
-  color: $dark;
-  text-decoration: none;
-  padding: 1em 2em;
-  &:hover {
-    border: 2px solid $highlight;
-    color: $highlight;
   }
 }
 
