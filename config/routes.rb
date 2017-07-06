@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   resources :posts, only: [:show]
-  resources :projects
 
   root 'welcome#index'
 
