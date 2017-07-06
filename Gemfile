@@ -30,7 +30,7 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'minitest-rails'
+  gem 'minitest',         '~> 5.10', '!= 5.10.2'
   gem 'spring'
   gem 'pry'
   gem 'pry-rails'
