@@ -32,7 +32,6 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
-  gem 'guard'
   gem 'pry'
   gem 'pry-rails'
   gem 'better_errors'

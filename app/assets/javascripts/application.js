@@ -17,9 +17,9 @@
 
 // Alert Messages
 $(document).ready(function() {
-    setTimeout(function() {
-        $(".notice-alert-messages").fadeOut("slow", function() {
-            $(this).remove();
-        })
-    }, 3000 );
+  setTimeout(function() {
+      $(".notice-alert-messages").fadeOut("slow", function() {
+          $(this).remove();
+      })
+  }, 3000 );
 });
