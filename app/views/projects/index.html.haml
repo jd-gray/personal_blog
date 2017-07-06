@@ -1,6 +1,4 @@
-%h1#page_titleMy Projects
-
-.skinny_wrapper#posts_wrapper
+.skinny_wrapper.text-center#posts_wrapper
   - @projects.each do |post|
     #post
       %p#date= post.created_at.strftime('%A, %B %d')

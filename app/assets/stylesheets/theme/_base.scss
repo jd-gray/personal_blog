@@ -84,13 +84,6 @@ hr {
   }
 }
 
-#page_title {
-  text-align: center;
-  border-bottom: 1px solid $border;
-  padding: 1em 0;
-  font-size: 20px;
-}
-
 #main_footer {
   padding: 3em 5%;
   padding-top: 20px;
@@ -158,10 +151,6 @@ input[type="submit"], .button {
   text-align: center;
 }
 
-.hidden {
-    display: none;
-}
-
 .notice-alert-messages {
   position: absolute;
   top: 0;
@@ -186,14 +175,45 @@ input[type="submit"], .button {
   }
 }
 
-#cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
 }
 
-#welcome-image {
-  height: 250px;
-  width: 200px;
-  border-radius: 55%;
+.pagination:after {
+  clear:box;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+  width: 100%;
+  a, .previous_page, .current, .next_page {
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
+  }
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+  .disabled {
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: $white;
+    }
+  }
 }

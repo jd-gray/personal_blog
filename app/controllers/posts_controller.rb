@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show]
-  before_action :authenticate_user!, except: [:show]
 
   def show; end
 
