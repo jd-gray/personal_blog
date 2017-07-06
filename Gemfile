@@ -31,7 +31,6 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'minitest-rails'
-  gem 'web-console'
   gem 'spring'
   gem 'pry'
   gem 'pry-rails'
@@ -40,6 +39,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem 'web-console'
 end
 
 group :production do
