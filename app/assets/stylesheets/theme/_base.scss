@@ -47,6 +47,7 @@ hr {
 .main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+
   .name {
     font-weight: 700;
     font-size: 22px;
@@ -55,14 +56,21 @@ hr {
     text-decoration: none;
     color: $dark;
     float: left;
+
     &:hover {
       color: $highlight;
     }
   }
+
   .social-links {
     float: right;
+    a:hover {
+      text-decoration: none;
+    }
+
     i {
       color: $dark;
+      font-size: 30px;
       margin-left: 1em;
       &:hover {
         color: $highlight;
