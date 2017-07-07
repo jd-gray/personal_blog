@@ -3,3 +3,7 @@ deployment:
     branch: master
     heroku:
       appname: jared-blog
+
+machine:
+  environment:
+    CC_TEST_REPORTER_ID: ENV['CODECLIMATE_REPO_TOKEN']

@@ -32,11 +32,14 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'minitest',         '~> 5.10', '!= 5.10.2'
+  gem 'minitest',                     '~> 5.10', '!= 5.10.2'
   gem 'spring'
   gem 'pry'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'simplecov',                    '~> 0.14.1'
+  gem 'codeclimate-test-reporter',    '~> 1.0.0'
+  gem 'm',                            '~> 1.5.0'
 end
 
 group :development do
