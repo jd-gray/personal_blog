@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @posts = Post.all.limit(5).order('created_at desc').decorate
+    @posts = Post.all.order('created_at desc').decorate
   end
 end
