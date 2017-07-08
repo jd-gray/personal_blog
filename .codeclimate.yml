@@ -1,0 +1,26 @@
+engines:
+  rubocop:
+    enabled: true
+  reek:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  scss-lint:
+    enabled: true
+  duplication:
+  	enabled: true
+    config:
+      languages:
+        - ruby
+        - javascript
+ratings:
+  paths:
+    - app/**
+    - lib/**
+    - "**.rb"
+    - "**.scss"
+exclude_paths:
+  - test/**/*
+  - "**/vendor/**/*"
