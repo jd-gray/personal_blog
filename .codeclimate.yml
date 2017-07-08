@@ -16,6 +16,9 @@ engines:
   haml-lint:
     enabled: true
     channel: "beta"
+    checks:
+      HamlLint/LineLength:
+        enabled: false
   duplication:
     enabled: true
     config:
@@ -35,3 +38,4 @@ exclude_paths:
 - test/**/*
 - vendor/**/*
 - app/assets/stylesheets/libs/*
+- app/views/posts/_disqus.html.haml
