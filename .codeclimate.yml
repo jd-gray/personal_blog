@@ -11,8 +11,8 @@ engines:
   scss-lint:
     enabled: true
   haml-lint:
-      enabled: true
-      channel: "beta"
+    enabled: true
+    channel: "beta"
   duplication:
   	enabled: true
     config:
