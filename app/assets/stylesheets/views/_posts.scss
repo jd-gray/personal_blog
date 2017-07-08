@@ -1,18 +1,19 @@
 .posts {
-  .content {
-    header {
-      text-align: center;
-      .date {
-        font-size: .9em;
-        color: $light;
-        margin: 0;
-      }
-      h1 {
-        margin: 0;
-      }
+  header {
+    text-align: center;
+
+    .date {
+      color: $light;
+      font-size: .9em;
+      margin: 0;
     }
-    hr {
-      margin: 3em auto;
+
+    h1 {
+      margin: 0;
     }
+  }
+
+  hr {
+    margin: 3em auto;
   }
 }

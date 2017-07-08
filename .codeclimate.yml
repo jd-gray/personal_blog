@@ -4,6 +4,9 @@ engines:
     enabled: true
   reek:
     enabled: true
+    checks:
+      IrresponsibleModule:
+        enabled: false
   eslint:
     enabled: true
   csslint:
