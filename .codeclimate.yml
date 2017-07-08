@@ -26,5 +26,9 @@ ratings:
   - "**.rb"
   - "**.scss"
 exclude_paths:
+- bin/**/*
+- db/**/*
+- public/**/*
 - test/**/*
-- "**/vendor/**/*"
+- vendor/**/*
+- app/assets/stylesheets/libs/*
