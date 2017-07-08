@@ -14,11 +14,11 @@ engines:
     enabled: true
     channel: "beta"
   duplication:
-  	enabled: true
+    enabled: true
     config:
       languages:
-        ruby:
-        javascript:
+      - ruby:
+      - javascript:
 ratings:
   paths:
   - app/**
