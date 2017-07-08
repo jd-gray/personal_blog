@@ -1,3 +1,4 @@
+---
 engines:
   rubocop:
     enabled: true
@@ -9,18 +10,21 @@ engines:
     enabled: true
   scss-lint:
     enabled: true
+  haml-lint:
+      enabled: true
+      channel: "beta"
   duplication:
   	enabled: true
     config:
       languages:
-        - ruby
-        - javascript
+        ruby:
+        javascript:
 ratings:
   paths:
-    - app/**
-    - lib/**
-    - "**.rb"
-    - "**.scss"
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.scss"
 exclude_paths:
-  - test/**/*
-  - "**/vendor/**/*"
+- test/**/*
+- "**/vendor/**/*"
