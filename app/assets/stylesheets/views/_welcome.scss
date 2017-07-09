@@ -1,9 +1,18 @@
 .welcome {
-  hr {
+  margin: 0 auto;
+
+  p {
     margin: 0 auto;
+    width: 50%;
   }
 
-  .posts {
-    width: 50%;
+  .date {
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    p {
+      width: 90%;
+    }
   }
 }
