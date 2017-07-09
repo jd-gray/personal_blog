@@ -3,6 +3,14 @@
 [![Test Coverage](https://codeclimate.com/github/jd-gray/personal_blog/badges/coverage.svg)](https://codeclimate.com/github/jd-gray/personal_blog/coverage)
 [![Issue Count](https://codeclimate.com/github/jd-gray/personal_blog/badges/issue_count.svg)](https://codeclimate.com/github/jd-gray/personal_blog)
 
-## Personal Website/Blog
+# Personal Website/Blog
+Where I blog about material I have learned in my web development career.
 
-- Built with Ruby on Rails
+## Built With:
+    - Ruby 2.3.0
+    - Rails 5.1.0
+    - Docker (local development)
+    
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
