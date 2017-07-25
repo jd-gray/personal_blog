@@ -8,7 +8,7 @@ ActiveAdmin.register Post do
       truncate(post.content, omision: "...", length: 100)
     end
     column :created_at
-    
+
     actions
   end
 
