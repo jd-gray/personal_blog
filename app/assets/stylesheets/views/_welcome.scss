@@ -10,6 +10,16 @@
     padding-bottom: 10px;
   }
 
+  .badge {
+    a {
+      color: $white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
   @media only screen and (max-device-width: 480px) {
     p {
       width: 90%;

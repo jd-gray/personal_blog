@@ -4,6 +4,9 @@
       %h3= link_to post.title, post
       %p.date= post.created_at
       %p= post.content
+      %br
+      - post.tags.each do |tag|
+        %span.badge= link_to tag.name, tag_path(tag: tag.name)
       %hr
 
   = will_paginate @posts
