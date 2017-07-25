@@ -21,6 +21,7 @@ gem 'paperclip',           '~> 4.3'
 gem 'aws-sdk',             '~> 1.6'
 gem 'bootstrap-sass',      '~> 3.3', '>= 3.3.6'
 gem 'acts-as-taggable-on', '~> 5.0'
+gem 'newrelic_rpm'
 
 # Due to Rails 5.1
 gem 'devise', git: 'https://github.com/plataformatec/devise'
