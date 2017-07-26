@@ -1,5 +1,5 @@
 .row
-  .posts.text-center
+  .posts.text-center.col-md-8
     - @posts.each do |post|
       %h3= link_to post.title, post
       %p.date= post.created_at
@@ -8,5 +8,9 @@
       - post.tags.each do |tag|
         %span.badge= link_to tag.name, tag_path(tag: tag.name)
       %hr
+
+  .jumbotron.col-md-3
+    - @tags.each do |tag|
+      %span.badge= link_to tag.name, tag_path(tag: tag.name)
 
   = will_paginate @posts

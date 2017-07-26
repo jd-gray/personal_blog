@@ -20,6 +20,12 @@
     }
   }
 
+  .jumbotron {
+    margin-top: 20px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
   @media only screen and (max-device-width: 480px) {
     p {
       width: 90%;
