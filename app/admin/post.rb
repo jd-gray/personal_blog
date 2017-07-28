@@ -1,6 +1,9 @@
 ActiveAdmin.register Post do
   permit_params :title, :content, :tag_list
 
+  filter :title
+  filter :content
+
   index do
     column :id
     column :title
@@ -10,6 +13,15 @@ ActiveAdmin.register Post do
     column :created_at
 
     actions
+  end
+
+  show do
+    attributes_table do
+      row :title
+      row :content
+      row :tag_list
+      row :created_at
+    end
   end
 
   form do |f|
