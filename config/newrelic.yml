@@ -1,22 +1,22 @@
 #
 # This file configures the New Relic Agent.  New Relic monitors Ruby, Java,
-# .NET, PHP, Python and Node applications with deep visibility and low
+# .NET, PHP, Python, Node, and Go applications with deep visibility and low
 # overhead.  For more information, visit www.newrelic.com.
 #
-# Generated July 25, 2017
+# Generated December 09, 2017
 #
-# This configuration file is custom generated for 1986_13
+# This configuration file is custom generated for Jared Apps
 #
 # For full documentation of agent configuration options, please refer to
 # https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: c56a312992c3d664b897509da1424309b92e6031
+  license_key: 417242f108f9476754084a0c407cbaa9f9e03475
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
-  app_name: My Application
+  app_name: Personal Site
 
   # To disable the agent regardless of other settings, uncomment the following:
   # agent_enabled: false
