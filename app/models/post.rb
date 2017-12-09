@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :content, presence: true
 
-  scope :desc, -> {
+  scope :desc, lambda {
     order('posts.created_at DESC')
   }
 end

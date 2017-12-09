@@ -39,3 +39,4 @@ exclude_paths:
 - vendor/**/*
 - app/assets/stylesheets/libs/*
 - app/views/posts/_disqus.html.haml
+- config/environments/production.rb
