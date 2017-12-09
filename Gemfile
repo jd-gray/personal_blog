@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'paperclip', '~> 4.3'
 gem 'pygments.rb', '~> 1.2.1'
-gem 'rails', '5.1.0'
+gem 'rails', '5.1.4'
 gem 'redcarpet', '~> 3.2.2'
 gem 'sass-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
