@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -85,15 +87,14 @@ Rails.application.configure do
 
   # Sets Paperclip to Upload to Amazon S3 by default
   config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_protocol => :https,
-    :s3_credentials => {
-      :bucket => ENV['S3_BUCKET'],
-      :access_key_id => ENV['S3_KEY'],
-      :secret_access_key => ENV['S3_SECRET']
+    storage: :s3,
+    s3_protocol: :https,
+    s3_credentials: {
+      bucket: ENV['S3_BUCKET'],
+      access_key_id: ENV['S3_KEY'],
+      secret_access_key: ENV['S3_SECRET']
     },
-    :url =>':s3_domain_url',
-    :path => '/:class/:attachment/:id_partition/:style/:filename'
+    url: ':s3_domain_url',
+    path: '/:class/:attachment/:id_partition/:style/:filename'
   }
-
 end
