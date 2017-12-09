@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module PostsHelper
   class HTMLwithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
@@ -12,13 +14,13 @@ module PostsHelper
 
   def options
     {
-        autolink: true,
-        no_intra_emphasis: true,
-        disable_indented_code_blocks: true,
-        fenced_code_blocks: true,
-        lax_html_blocks: true,
-        strikethrough: true,
-        superscript: true
+      autolink: true,
+      no_intra_emphasis: true,
+      disable_indented_code_blocks: true,
+      fenced_code_blocks: true,
+      lax_html_blocks: true,
+      strikethrough: true,
+      superscript: true
     }
   end
 end
