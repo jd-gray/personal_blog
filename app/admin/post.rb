@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ActiveAdmin.register Post do
   permit_params :title, :content, :tag_list
 
@@ -8,7 +10,7 @@ ActiveAdmin.register Post do
     column :id
     column :title
     column :content do |post|
-      truncate(post.content, omision: "...", length: 100)
+      truncate(post.content, omision: '...', length: 100)
     end
     column :created_at
 
@@ -25,7 +27,7 @@ ActiveAdmin.register Post do
   end
 
   form do |f|
-    f.inputs "Create Post" do
+    f.inputs 'Create Post' do
       f.input :title
       f.input :content
       f.input :tag_list

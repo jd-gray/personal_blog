@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WelcomeController < ApplicationController
   def index
     @posts = params[:tag] ? Post.tagged_with(params[:tag]) : Post.all
