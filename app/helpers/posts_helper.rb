@@ -2,6 +2,7 @@
 
 module PostsHelper
   class HTMLwithPygments < Redcarpet::Render::HTML
+    # :reek:UtilityFunction
     def block_code(code, language)
       Pygments.highlight(code, lexer: language)
     end
