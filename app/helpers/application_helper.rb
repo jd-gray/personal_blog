@@ -15,10 +15,10 @@ module ApplicationHelper
 
   def markdown(content)
     renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
-    Redcarpet::Markdown.new(renderer, markdown_options).render(content).html_safe
+    Redcarpet::Markdown.new(renderer, options).render(content).html_safe
   end
 
-  def markdown_options
+  def options
     {
       autolink: true,
       no_intra_emphasis: true,
