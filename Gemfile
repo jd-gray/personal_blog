@@ -14,6 +14,7 @@ gem 'coffee-rails'
 gem 'devise', git: 'https://github.com/plataformatec/devise'
 
 gem 'draper', '~> 3.0'
+gem 'font-awesome-rails'
 gem 'friendly_id', '~> 5.1.0'
 gem 'haml', '~> 5.0', '>= 5.0.1'
 gem 'jbuilder', '~> 2.0'
