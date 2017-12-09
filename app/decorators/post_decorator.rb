@@ -8,6 +8,6 @@ class PostDecorator < ApplicationDecorator
   end
 
   def created_at
-    object.created_at.strftime("%A, %b %d %Y")
+    object.created_at.strftime('%A, %b %d %Y')
   end
 end
