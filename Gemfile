@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.4.2'
 
 gem 'activeadmin', '~> 1.0'
 gem 'acts-as-taggable-on', '~> 5.0'
